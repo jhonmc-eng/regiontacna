@@ -39,19 +39,19 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Nombre*</label>
+							<label for="" class="col-sm-2 control-label">Nombre de idioma*</label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="lang_name" value="">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Short Nombre*</label>
+							<label for="" class="col-sm-2 control-label">Nombre corto de idioma*</label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="lang_short_name" value="">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Default?</label>
+							<label for="" class="col-sm-2 control-label">Por defecto</label>
 							<div class="col-sm-4" style="padding-top: 5px;">
 								<input type="hidden" name="lang_default" value="0">
 								<input type="checkbox" name="lang_default" value="1">

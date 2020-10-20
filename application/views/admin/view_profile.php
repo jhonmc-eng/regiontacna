@@ -5,7 +5,7 @@ if(!$this->session->userdata('id')) {
 ?>
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Edit Profile</h1>
+		<h1>Editar perfil</h1>
 	</div>
 </section>
 
@@ -39,9 +39,9 @@ if(!$this->session->userdata('id')) {
 				
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab_1" data-toggle="tab">Update Information</a></li>
-					<li><a href="#tab_2" data-toggle="tab">Update Photo</a></li>
-					<li><a href="#tab_3" data-toggle="tab">Update Password</a></li>
+					<li class="active"><a href="#tab_1" data-toggle="tab">Actualizar información</a></li>
+					<li><a href="#tab_2" data-toggle="tab">Actualizar foto</a></li>
+					<li><a href="#tab_3" data-toggle="tab">Actualizar contraseña</a></li>
 				</ul>
 				<div class="tab-content">
 
@@ -56,7 +56,7 @@ if(!$this->session->userdata('id')) {
 									</div>			
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Role <span>*</span></label>
+									<label for="" class="col-sm-2 control-label">Rol <span>*</span></label>
 									<div class="col-sm-4" style="padding-top:7px;">
 										<?php echo $this->session->userdata('role'); ?>
 									</div>
@@ -64,7 +64,7 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form1">Update Information</button>
+										<button type="submit" class="btn btn-success pull-left" name="form1">Actualizar información</button>
 									</div>
 								</div>
 							</div>
@@ -88,7 +88,7 @@ if(!$this->session->userdata('id')) {
 						            </div>
 						        </div>
 								<div class="form-group">
-						            <label for="" class="col-sm-2 control-label">New Photo</label>
+						            <label for="" class="col-sm-2 control-label">Nueva imagen</label>
 						            <div class="col-sm-6" style="padding-top:6px;">
 						                <input type="file" name="photo">
 						            </div>
@@ -96,7 +96,7 @@ if(!$this->session->userdata('id')) {
 						        <div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form2">Update Photo</button>
+										<button type="submit" class="btn btn-success pull-left" name="form2">Actualizar imagen</button>
 									</div>
 								</div>
 							</div>
@@ -110,13 +110,13 @@ if(!$this->session->userdata('id')) {
 						<div class="box box-info">
 							<div class="box-body">
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Password </label>
+									<label for="" class="col-sm-2 control-label">Nueva contraseña </label>
 									<div class="col-sm-4">
 										<input type="password" class="form-control" name="password">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Retype Password </label>
+									<label for="" class="col-sm-2 control-label">Re-ingresa contraseña </label>
 									<div class="col-sm-4">
 										<input type="password" class="form-control" name="re_password">
 									</div>
@@ -124,7 +124,7 @@ if(!$this->session->userdata('id')) {
 						        <div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form3">Update Password</button>
+										<button type="submit" class="btn btn-success pull-left" name="form3">Actualizar Contraseña</button>
 									</div>
 								</div>
 							</div>

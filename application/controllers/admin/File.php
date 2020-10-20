@@ -48,11 +48,11 @@ class File extends CI_Controller
 		        $ext_check = $this->Model_common->extension_check_file($ext);
 		        if($ext_check == FALSE) {
 		            $valid = 0;
-		            $error .= 'You must have to upload jpg, jpeg, gif, png, pdf, doc, docx, xls, xlsx, csv file<br>';
+		            $error .= 'Formatos de archivos permitidos jpg, jpeg, gif, png, pdf, doc, docx, xls, xlsx, csv <br>';
 		        }
 		    } else {
 		    	$valid = 0;
-		        $error .= 'You must have to select a file<br>';
+		        $error .= 'Debe seleccionar un archivo<br>';
 		    }
 
 		    if($valid == 1) 
@@ -71,7 +71,7 @@ class File extends CI_Controller
 	            );
 	            $this->Model_file->add($form_data);
 
-		        $success = 'File is added successfully!';
+		        $success = 'Archivo subido correctamente!';
 		        $this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/file');
 		    } 
@@ -127,7 +127,7 @@ class File extends CI_Controller
 		        $ext_check = $this->Model_common->extension_check_file($ext);
 		        if($ext_check == FALSE) {
 		            $valid = 0;
-		            $error .= 'You must have to upload jpg, jpeg, gif, png, pdf, doc, docx, xls, xlsx, csv file<br>';
+		            $error .= 'Archivos permitidos jpg, jpeg, gif, png, pdf, doc, docx, xls, xlsx, csv <br>';
 		        }
 		    }
 
@@ -154,7 +154,7 @@ class File extends CI_Controller
 		            $this->Model_file->update($id,$form_data);
 				}
 				
-				$success = 'File is updated successfully';
+				$success = 'Archivo subido correctamente!';
 				$this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/file');
 		    }
@@ -188,7 +188,7 @@ class File extends CI_Controller
         }
 
         $this->Model_file->delete($id);
-        $success = 'File is deleted successfully';
+        $success = 'Archivo eliminado correctamente!';
 		$this->session->set_flashdata('success',$success);
         redirect(base_url().'admin/file');
     }

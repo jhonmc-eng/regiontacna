@@ -5,7 +5,7 @@ if(!$this->session->userdata('id')) {
 ?>
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Edit Language</h1>
+		<h1>Editar Idioma</h1>
 	</div>
 	<div class="content-header-right">
 		<a href="<?php echo base_url(); ?>admin/lang" class="btn btn-primary btn-sm">Ver Todo</a>
@@ -39,19 +39,19 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Nombre*</label>
+							<label for="" class="col-sm-2 control-label">Nombre de idioma*</label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="lang_name" value="<?php echo $lang['lang_name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Short Nombre*</label>
+							<label for="" class="col-sm-2 control-label">Nombre corto de idioma*</label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="lang_short_name" value="<?php echo $lang['lang_short_name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Language Default?</label>
+							<label for="" class="col-sm-2 control-label">Por defecto</label>
 							<div class="col-sm-4" style="padding-top: 5px;">
 								<input type="hidden" name="lang_default" value="0">
 								<input type="checkbox" name="lang_default" value="1" <?php if($lang['lang_default'] == 'Yes') {echo 'checked';} ?>>

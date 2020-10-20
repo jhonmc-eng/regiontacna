@@ -83,7 +83,7 @@ if(!$this->session->userdata('id')) {
 									</td>
 									<td><?php echo $row['file_title']; ?></td>
 									<td>
-										<a href=""><?php echo base_url().'public/uploads/'.$row['file_name']; ?></a>
+										<a href="<?php echo base_url().'public/uploads/'.$row['file_name']; ?>"><?php echo base_url().'public/uploads/'.$row['file_name']; ?></a>
 									</td>
 									<td>										
 										<a href="<?php echo base_url(); ?>admin/file/edit/<?php echo $row['file_id']; ?>" class="btn btn-primary btn-xs">Editar</a>
